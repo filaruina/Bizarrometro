@@ -1,0 +1,16 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="http://{{ app.request.host }}/css/reset-min.css">
+		<link rel="stylesheet" type="text/css" href="http://{{ app.request.host }}/css/layout.css"/>
+		<title>Bem-Vindo ao Bizarrometro, onde as pessoas bizarras sofrem!!</title>
+	</head>
+	<body>
+		<div id="content">
+			{% block content %}{% endblock %}
+			<div class="creditos">
+				<img src="http://{{ app.request.host }}/img/ti_presos.png" />
+			</div>
+		</div>
+	</body>
+</html>

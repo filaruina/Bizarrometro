@@ -1,0 +1,6 @@
+Tenha certeza que você configurou seu PHP para rodar .phar
+E obviamente você deve ter PHP 5.3
+Eu usei:
+http://silex-project.org/
+http://www.twig-project.org/
+E implementei um ActiveRecord maroto que usa um padrao tosco (ja melhorei isso)

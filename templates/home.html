@@ -1,0 +1,26 @@
+{% extends 'layout.html' %}
+{% block content %}
+{% if loggedUser %}
+<span>Fala ai {{ loggedUser.nome }}, lembra da regra, falou alguma coisa bizarra, pode bater!</span>
+{% else %}
+<span>Oi, você não ta logado, não rola de bater na galera. <a href="/player/login">Entra ai</a></span>
+{% endif %}
+<hr/>
+<h1>Participantes da Pancadaria!!</h1>
+<ul class="participantes">
+	{% for player in players %}
+	<li>
+		<div class="health-bar tam{{ player.life }}"></div>
+		{% if player.life > 0 %}
+		<a class="punch_area" href="/punch/{{ loop.index }}">
+		{% endif %}
+		<img src="http://{{ app.request.host }}/img/players/{{ loop.index }}/{{ player.life }}.png" />
+		{% if player.life > 0 %}
+		</a>
+		{% endif %}
+		<div class="name">{{ player.obj.nome }}</div>
+	</li>
+	{% endfor %}
+</ul>
+<br class="clearer" />
+{% endblock %}

@@ -1,0 +1,67 @@
+body {
+	font-family: arial;
+	font-size:14px;
+}
+
+h1 {
+	margin: 15px 0;
+	font-size:16px;
+	text-align:center;
+	font-weight: bold;
+}
+
+h2 {
+	margin: 5px 0;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+.clearer {
+	clear: both;
+}
+
+#content {
+	padding-top: 10px;
+	width: 800px;
+	margin: 0 auto;
+}
+
+#content .participantes li {
+	display: block;
+	margin-right: 10px;
+	text-align: center;
+	width: 150px;
+	height: 250px;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#content .health-bar {
+	width: 120px;
+	height: 20px;
+	border: 3px solid #000;
+	background: #7c7c7c url("../img/health-bar.png") no-repeat;
+	margin: 0 auto;
+	margin-bottom: 20px;
+}
+
+#content .health-bar.tam10 { background-position: 0 0; }
+#content .health-bar.tam9 { background-position: -12px 0; }
+#content .health-bar.tam8 { background-position: -24px 0; }
+#content .health-bar.tam7 { background-position: -36px 0; }
+#content .health-bar.tam6 { background-position: -48px 0; }
+#content .health-bar.tam5 { background-position: -60px 0; }
+#content .health-bar.tam4 { background-position: -72px 0; }
+#content .health-bar.tam3 { background-position: -84px 0; }
+#content .health-bar.tam2 { background-position: -96px 0; }
+#content .health-bar.tam1 { background-position: -108px 0; }
+#content .health-bar.tam0 { background-position: -120px 0; }
+
+#content .participantes .name {
+	font-weight:bold;
+	font-size:16px;
+}
+
+#content .participantes .punch_area {
+	cursor: url('../img/glove.png'), auto;
+}
